@@ -1,10 +1,23 @@
 {
-  "name": "Template R operator",
-  "description": "Return the medium value of a cell",
-  "tags": ["template"],
+  "name": "Hierarchical clustering operator",
+  "description": "Perform the hierarchical clustering of a set of datapoints based on provided variable values.",
+  "tags": ["clustering"],
   "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/template_R_operator"],
-  "properties": []
+  "urls": ["https://github.com/tercen/hierarchical_clustering_operator"],
+  "properties": [
+   {
+    "kind": "DoubleProperty",
+    "name": "min_clust",
+    "defaultValue": 1,
+    "description": "Minimal number of clusters."
+  },
+  {
+    "kind": "DoubleProperty",
+    "name": "max_clust",
+    "defaultValue": 10,
+    "description": "Maximal number of clusters."
+  }
+  ]
 }
 
 
