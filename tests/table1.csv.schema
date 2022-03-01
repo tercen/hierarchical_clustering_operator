@@ -1,0 +1,56 @@
+{
+  "kind": "TableSchema",
+  "columns": [
+    {
+      "kind": "ColumnSchema",
+      "name": ".ri",
+      "type": "int32"
+    },
+    {
+      "kind": "ColumnSchema",
+      "name": "ds0.r_order",
+      "type": "int32"
+    },
+    {
+      "kind": "ColumnSchema",
+      "name": "ds0.k_1",
+      "type": "int32"
+    },{
+      "kind": "ColumnSchema",
+      "name": "ds0.k_2",
+      "type": "int32"
+    },{
+      "kind": "ColumnSchema",
+      "name": "ds0.k_3",
+      "type": "int32"
+    },{
+      "kind": "ColumnSchema",
+      "name": "ds0.k_4",
+      "type": "int32"
+    },{
+      "kind": "ColumnSchema",
+      "name": "ds0.k_5",
+      "type": "int32"
+    },{
+      "kind": "ColumnSchema",
+      "name": "ds0.k_6",
+      "type": "int32"
+    },{
+      "kind": "ColumnSchema",
+      "name": "ds0.k_7",
+      "type": "int32"
+    },{
+      "kind": "ColumnSchema",
+      "name": "ds0.k_8",
+      "type": "int32"
+    },{
+      "kind": "ColumnSchema",
+      "name": "ds0.k_9",
+      "type": "int32"
+    },{
+      "kind": "ColumnSchema",
+      "name": "ds0.k_10",
+      "type": "int32"
+    }
+  ]
+}
