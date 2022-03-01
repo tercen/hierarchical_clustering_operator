@@ -1,0 +1,24 @@
+{
+  "kind": "TableSchema",
+  "columns": [
+    {
+      "kind": "ColumnSchema",
+      "name": ".ri",
+      "type": "int32"
+    },
+    {
+      "kind": "ColumnSchema",
+      "name": "ds0.r_order",
+      "type": "int32"
+    },
+    {
+      "kind": "ColumnSchema",
+      "name": "ds0.n_cluster",
+      "type": "double"
+    },{
+      "kind": "ColumnSchema",
+      "name": ds0.cluster"",
+      "type": "int32"
+    }
+  ]
+}
