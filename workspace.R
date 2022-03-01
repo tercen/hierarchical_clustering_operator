@@ -2,15 +2,20 @@ library(tercen)
 library(dplyr)
 library(tidyr)
 
-options("tercen.workflowId" = "d330322c43363eb4f9b27738ef0042b9")
-options("tercen.stepId"     = "1ae42627-e9ce-4d9f-9797-8700adfd7718")
+options("tercen.workflowId" = "0add2df8c4543198d0b9ab7b55003e76")
+options("tercen.stepId"     = "d732d42f-cb7d-4402-9639-ca768ccba766")
 
 getOption("tercen.workflowId")
 getOption("tercen.stepId")
 
-df <- (ctx = tercenCtx())  %>% 
+ctx <- tercenCtx()
+
+val<-ctx$op.value('fill')
+val<-1
+
+df <- ctx  %>% 
   select(.ci, .ri, .y) %>% 
-  reshape2::acast(.ri ~ .ci, value.var='.y', fill = as.double(ctx$op.value('fill')))
+  reshape2::acast(.ri ~ .ci, value.var='.y', fill = as.double(val))
 
 min_clust <- 1
 if(!is.null(ctx$op.value('min_clust'))) min_clust <- as.numeric(ctx$op.value('min_clust'))

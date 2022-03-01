@@ -2,7 +2,9 @@ library(tercen)
 library(dplyr)
 library(tidyr)
 
-df <- (ctx = tercenCtx())  %>% 
+ctx <- tercenCtx()
+
+df <- ctx  %>%
   select(.ci, .ri, .y) %>% 
   reshape2::acast(.ri ~ .ci, value.var='.y', fill = as.double(ctx$op.value('fill')))
 
