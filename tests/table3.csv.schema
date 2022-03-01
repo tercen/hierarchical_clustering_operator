@@ -17,7 +17,7 @@
       "type": "double"
     },{
       "kind": "ColumnSchema",
-      "name": ds0.cluster"",
+      "name":"ds0.cluster",
       "type": "int32"
     }
   ]
