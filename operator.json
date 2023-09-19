@@ -1,6 +1,6 @@
 {
-  "name": "Hclust - Groups",
-  "description": "Hierarchical Clustering: An algorithm that groups data points in levels of similarity and returns the group memberships.",
+  "name": "Hierarchical Clustering",
+  "description": "Cluster data points based on their pairwise similarity and returns the group memberships.",
   "tags": ["clustering"],
   "authors": ["tercen"],
   "urls": ["https://github.com/tercen/hierarchical_clustering_operator"],

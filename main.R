@@ -1,6 +1,8 @@
-library(tercen)
-library(dplyr)
-library(tidyr)
+suppressPackageStartupMessages({
+  library(tercen)
+  library(dplyr)
+  library(tidyr)
+})
 
 ctx <- tercenCtx()
 
@@ -8,10 +10,8 @@ df <- ctx  %>%
   select(.ci, .ri, .y) %>% 
   reshape2::acast(.ri ~ .ci, value.var='.y', fill = as.double(ctx$op.value('fill')))
 
-min_clust <- 1
-if(!is.null(ctx$op.value('min_clust'))) min_clust <- as.numeric(ctx$op.value('min_clust'))
-max_clust <- 30
-if(!is.null(ctx$op.value('max_clust'))) max_clust <- as.numeric(ctx$op.value('max_clust'))
+min_clust <- ctx$op.value('min_clust',  as.numeric, 1)
+max_clust <- ctx$op.value('max_clust',  as.numeric, 10)
 
 if(min_clust > max_clust) stop("min_clust must be lower than max_clust.")
 
@@ -32,4 +32,5 @@ df_out_gathered <- df %>% gather(n_cluster, cluster, -.ri, -r_order) %>%
   mutate(n_cluster = as.double(gsub("k_", "", n_cluster))) %>%
   ctx$addNamespace()
 
-list(df_out, df_out_gathered) %>% ctx$save()
+list(df_out, df_out_gathered) %>% 
+  ctx$save()
