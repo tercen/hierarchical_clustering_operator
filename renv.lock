@@ -12,19 +12,19 @@
       },
       {
         "Name": "BioCsoft",
-        "URL": "https://cran.tercen.com/api/v1/rlib/BioCsoft-3.8"
+        "URL": "https://cran.tercen.com/api/v1/rlib/BioCsoft-3.12"
       },
       {
         "Name": "BioCann",
-        "URL": "https://cran.tercen.com/api/v1/rlib/BioCann-3.8"
+        "URL": "https://cran.tercen.com/api/v1/rlib/BioCann-3.12"
       },
       {
         "Name": "BioCexp",
-        "URL": "https://cran.tercen.com/api/v1/rlib/BioCexp-3.8"
+        "URL": "https://cran.tercen.com/api/v1/rlib/BioCexp-3.12"
       },
       {
         "Name": "BioCworkflows",
-        "URL": "https://cran.tercen.com/api/v1/rlib/BioCworkflows-3.8"
+        "URL": "https://cran.tercen.com/api/v1/rlib/BioCworkflows-3.12"
       }
     ]
   },
@@ -41,14 +41,14 @@
     },
     "Rcpp": {
       "Package": "Rcpp",
-      "Version": "1.0.6",
+      "Version": "1.0.11",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Requirements": [
         "methods",
         "utils"
       ],
-      "Hash": "dbb5e436998a7eba5a9d682060533338"
+      "Hash": "ae6cbbe1492f4de79c45fce06f967ce8"
     },
     "askpass": {
       "Package": "askpass",
@@ -495,16 +495,16 @@
     },
     "withr": {
       "Package": "withr",
-      "Version": "2.4.1",
+      "Version": "2.5.0",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "grDevices",
         "graphics",
         "stats"
       ],
-      "Hash": "caf4781c674ffa549a4676d2d77b13cc"
+      "Hash": "c0e49a9760983e81e55cdd9be92e7182"
     },
     "yaml": {
       "Package": "yaml",
