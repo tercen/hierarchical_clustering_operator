@@ -1,6 +1,6 @@
 {
   "name": "Hierarchical Clustering",
-  "description": "Cluster data points based on their pairwise similarity and returns the group memberships.",
+  "description": "Clusters data points based on their pairwise similarity and returns the group memberships.",
   "tags": [
     "clustering"
   ],
