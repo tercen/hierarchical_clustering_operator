@@ -1,23 +1,27 @@
 {
   "name": "Hierarchical Clustering",
   "description": "Cluster data points based on their pairwise similarity and returns the group memberships.",
-  "tags": ["clustering"],
-  "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/hierarchical_clustering_operator"],
+  "tags": [
+    "clustering"
+  ],
+  "authors": [
+    "tercen"
+  ],
+  "urls": [
+    "https://github.com/tercen/hierarchical_clustering_operator"
+  ],
   "properties": [
-   {
-    "kind": "DoubleProperty",
-    "name": "min_clust",
-    "defaultValue": 1,
-    "description": "Minimal number of clusters."
-  },
-  {
-    "kind": "DoubleProperty",
-    "name": "max_clust",
-    "defaultValue": 10,
-    "description": "Maximal number of clusters."
-  }
+    {
+      "kind": "DoubleProperty",
+      "name": "min_clust",
+      "defaultValue": 1,
+      "description": "Minimal number of clusters."
+    },
+    {
+      "kind": "DoubleProperty",
+      "name": "max_clust",
+      "defaultValue": 10,
+      "description": "Maximal number of clusters."
+    }
   ]
 }
-
-
