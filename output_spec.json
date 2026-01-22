@@ -1,24 +1,44 @@
 {
-  "outputSpecs": [{
-    "kind": "OperatorJoinSpec",
-    "description": "Multi-resolution clustering output with order and cluster assignments per k value",
-    "joinOperators": [{
-      "kind": "JoinOperator",
-      "joinType": "left",
-      "leftPair": {
-        "kind": "ColumnPair",
-        "lColumns": ["Observations"],
-        "rColumns": ["Observations"]
-      },
-      "rightRelation": {
-        "kind": "TableRelation",
-        "description": "Pivoted output with n_cluster and cluster columns",
-        "attributes": [
-          {"kind": "Attribute", "name": "r_order", "type": "int32"},
-          {"kind": "Attribute", "name": "n_cluster", "type": "double"},
-          {"kind": "Attribute", "name": "cluster", "type": "int32"}
-        ]
-      }
-    }]
-  }]
+  "outputSpecsV2": [
+    {
+      "kind": "OperatorJoinSpec",
+      "description": "Multi-resolution clustering output with order and cluster assignments per k value",
+      "joinOperators": [
+        {
+          "kind": "JoinOperator",
+          "joinType": "left",
+          "leftPair": {
+            "kind": "ColumnPair",
+            "lColumns": [
+              "Observations"
+            ],
+            "rColumns": [
+              "Observations"
+            ]
+          },
+          "rightRelation": {
+            "kind": "TableRelation",
+            "description": "Pivoted output with n_cluster and cluster columns",
+            "attributes": [
+              {
+                "kind": "Attribute",
+                "name": "r_order",
+                "type": "int32"
+              },
+              {
+                "kind": "Attribute",
+                "name": "n_cluster",
+                "type": "double"
+              },
+              {
+                "kind": "Attribute",
+                "name": "cluster",
+                "type": "int32"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
 }
